@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/fleet-management"
+    driver-class-name: "org.postgresql.Driver"
+    username: "postgres"
+    password: "postgres"
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+
+      javax:
+        persistence:
+          validation:
+            mode: "none"
+    hibernate:
+      ddl-auto: update
+springdoc:
+  api-docs:
+    path: /api-docs
